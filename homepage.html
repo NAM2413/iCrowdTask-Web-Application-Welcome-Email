@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <form action="/register" method="POST">
+        <div class="container">
+            <h2 >Requestion Registration</h1>
+            </br>
+            <h4 >Create an iCrowdTask Account</h3>
+            <br>
+
+
+            <form>
+                <fieldset>
+                    <b>Country of residence*</b>
+                    <p>
+                        <select class="list-of-country" name="country">
+                            <option disabled="disabled" selected="selected">Choose from list</option>
+                            <option value="Australia">Australia</option>
+                            <option value="America">America</option>
+                            <option value="Canada">Canada</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Vietnam">Vietnam</option>
+                        </select>
+                    </p>
+                </fieldset>
+            </form>
+
+            <div class="form-row">
+                <div class="col form-group">
+                    <label><b>First name* </b></label>
+                    <input class="split-textbox" type="text" name="firstname" required>
+                </div>
+                <div class="col form-group">
+                    <label><b>Last name*</b> </label>
+                    <input class="split-textbox" type="text" name="lastname" required>
+                </div>
+            </div>
+
+
+            <label><b>Enter Email *</b></label>
+            <input type="email" name="email" id="Email" required>
+
+            <label><b>Enter Password *</b></label>
+            <input type="password" name="password" id="password " required>
+
+            <label><b>Renter Password *</b></label>
+            <input type="password" name="password2" id="password2" required>
+
+
+            <label><b>Enter Address *</b></label>
+            <input type="text" name="Address" id="address1" required>
+            <input type="text" id="Address 2" name="address2">
+
+
+            <div class="form-row">
+                <div class="col form-group">
+                    <label><b>Enter City*</b> </label>
+                    <input class="split-textbox" type="text" name="city" required>
+                </div>
+                <div class="col form-group">
+                    <label><b>Enter State, Province or Region*</b></label>
+                    <input class="split-textbox" type="text" name="state" required>
+                </div>
+            </div>
+
+
+            <label><b> ZIP/Postal code</b></label>
+            <input type="text" name="code" id="email">
+
+
+            <label><b>Enter Mobile Phone Number</b></label>
+            <input type="text" name="mobile" id="email">
+            <br>
+            <br>
+
+
+            <button type="submit" class="btn btn-primary" name="Sent">Created Account</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
